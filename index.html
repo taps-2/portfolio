@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Thapelo Seshabela, IT student and aspiring developer.">
+    <title>Thapelo Seshabela | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        /* Apply saved theme before paint to avoid a flash */
+        (function () {
+            try {
+                var saved = localStorage.getItem("theme");
+                var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+            } catch (e) {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">Thapelo<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle dark mode">
+                        <span class="icon-moon">🌙</span><span class="icon-sun">☀️</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+                <h1>Thapelo Seshabela</h1>
+                <h2>IT Student &amp; Aspiring Developer</h2>
+                <p class="intro">
+                    I'm an IT student passionate about programming,
+                    web development and building technology that solves
+                    real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button">View My Work</a>
+                    <a href="#contact" class="button secondary-button">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="profile-card reveal">
+                <div class="profile-circle">TS</div>
+                <h3>Thapelo</h3>
+                <p>Developer in progress 🚀</p>
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I am an IT student passionate about programming,
+                        web development and technology. I enjoy learning
+                        new skills and building projects that solve real problems.
+                    </p>
+                    <p>
+                        I'm at the start of my journey and building my first projects.
+                        I'm looking for opportunities to learn, collaborate and grow as a developer.
+                    </p>
+                </div>
+                <ul class="facts">
+                    <li><strong>Studying</strong> Information Technology</li>
+                    <li><strong>Focus</strong> Web development</li>
+                    <li><strong>Based in</strong> South Africa</li>
+                    <li><strong>Status</strong> Open to opportunities</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>Python</div>
+                <div>C++</div>
+                <div>PHP</div>
+                <div>SQL</div>
+                <div>React.js</div>
+                <div>Git &amp; GitHub</div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2>My Projects</h2>
+            <p class="section-note">I'm just getting started, so here's what I've built so far and what's next.</p>
+
+            <div class="project-container">
+
+                <article class="project">
+                    <div class="project-thumb thumb-1"><span>&lt;/&gt;</span></div>
+                    <div class="project-body">
+                        <h3>My First Website</h3>
+                        <p>This portfolio, built from scratch with HTML, CSS and JavaScript, including a dark mode and a responsive layout.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="project-links">
+                            <a href="#home" class="project-button">Live site</a>
+                            <!-- Add your repo link: <a href="https://github.com/YOUR-USERNAME/REPO" class="project-button outline">Code</a> -->
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project placeholder">
+                    <div class="project-thumb thumb-2"><span>?</span></div>
+                    <div class="project-body">
+                        <h3>Project Two</h3>
+                        <p>My next project is in the works. Check back soon.</p>
+                        <div class="tags"><span>Coming soon</span></div>
+                    </div>
+                </article>
+
+                <article class="project placeholder">
+                    <div class="project-thumb thumb-3"><span>?</span></div>
+                    <div class="project-body">
+                        <h3>Project Three</h3>
+                        <p>More projects will be added as I keep building my programming skills.</p>
+                        <div class="tags"><span>Coming soon</span></div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>Contact Me</h2>
+            <p class="section-note">Want to get in touch? Send me a message and I'll get back to you.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="label">Email</p>
+                    <a href="mailto:thapelo.seshabela@icloud.com" class="email-link">thapelo.seshabela@icloud.com</a>
+                    <button type="button" id="copyEmail" class="copy-btn">Copy email</button>
+                    <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+                    <!-- Add your profiles here when ready:
+                    <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+                    <a href="https://linkedin.com/in/YOUR-PROFILE">LinkedIn</a> -->
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send message</button>
+                    <p class="form-note">This opens your email app with the message ready to send.</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Thapelo Seshabela. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
