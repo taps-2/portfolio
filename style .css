@@ -367,6 +367,7 @@ section h2 {
 
 .thumb-1 { background: linear-gradient(135deg, #00bcd4, #3f51b5); }
 .thumb-2 { background: linear-gradient(135deg, #6c757d, #343a40); opacity: 0.6; }
+.thumb-live-2 { background: linear-gradient(135deg, #7c4dff, #00bcd4); }
 .thumb-3 { background: linear-gradient(135deg, #6c757d, #343a40); opacity: 0.4; }
 
 .project-body {
@@ -560,4 +561,26 @@ footer {
     .about-grid,
     .contact-grid,
     .project-container { grid-template-columns: 1fr; }
+}
+
+/* Profile links */
+.profile-label {
+    margin-top: 22px;
+}
+
+.profile-link {
+    display: inline-block;
+    margin: 4px 10px 0 0;
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.profile-link:hover {
+    border-color: var(--accent);
+    color: var(--accent-strong);
 }
